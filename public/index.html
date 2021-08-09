@@ -5,6 +5,12 @@
     <script>
       $(document).ready(() => {
         alert("You got this message immediately after reloaded.");
+        $("#by-id h1:nth-of-type(1)").css("color","green");
+        $("#by-id h1:nth-of-type(2)").css("color","red");
+        $(".by-class h1:nth-of-type(1)").text("ABCD");
+        $(".by-class h1:nth-of-type(2)").text("EFGH");
+        $("[attr~='by-attr'] h1:nth-of-type(1)").css("font-size","14");
+        $("[attr~='by-attr'] h1:nth-of-type(2)").css("font-size","72");
       });
     </script>
   </head>
